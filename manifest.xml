@@ -9,6 +9,8 @@
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/trj_publisher</url>
   <depend package="roscpp"/>
+  <depend package="rospy"/>
+  <depend package="dynamic_reconfigure"/>
   <depend package="tf"/>
   <depend package="geometry_msgs"/>
   <depend package="visualization_msgs"/>
