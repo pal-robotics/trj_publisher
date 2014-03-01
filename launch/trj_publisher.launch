@@ -1,0 +1,4 @@
+<launch>
+   <!-- start the trj publisher--> 
+   <node pkg="trj_publisher" type="hand_pose_publisher" name="hand_pose_publisher"/>
+</launch>

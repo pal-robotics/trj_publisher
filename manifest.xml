@@ -4,7 +4,7 @@
      trj_publisher
 
   </description>
-  <author>student</author>
+  <author>Gennaro Raiola</author>
   <license>BSD</license>
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/trj_publisher</url>
@@ -13,7 +13,8 @@
   <depend package="dynamic_reconfigure"/>
   <depend package="tf"/>
   <depend package="geometry_msgs"/>
-  <depend package="visualization_msgs"/>
+  <depend package="visualization_msgs"/> 
+  <depend package="interactive_markers"/>
 
 </package>
 
