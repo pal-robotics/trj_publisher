@@ -114,12 +114,10 @@ int main(int argc, char** argv)
                                       left_wave_center_z + left_amplitude_z * std::sin(left_wave_speed * angle)));
     transform_l.setRotation(tf::Quaternion(0.0, 0.0, 0.0, 1.0));
 
-
     transform_r.setOrigin(tf::Vector3(right_wave_center_x + right_amplitude_x * std::sin(right_wave_speed * angle),
                                       right_wave_center_y + right_amplitude_y * std::sin(right_wave_speed * angle),
                                       right_wave_center_z + right_amplitude_z * std::sin(right_wave_speed * angle)));
     transform_r.setRotation(tf::Quaternion(0.0, 0.0, 0.0, 1.0));
-    transform_r.getOrigin()[1] = - transform_r.getOrigin()[1];
 
     transform_list.push_back(tf::StampedTransform(transform_r, ros::Time::now(), ref_frame, "/r_hand_goal"));
     transform_list.push_back(tf::StampedTransform(transform_l, ros::Time::now(), ref_frame, "/l_hand_goal"));
