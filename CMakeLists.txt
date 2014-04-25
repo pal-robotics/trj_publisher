@@ -151,6 +151,11 @@ install(TARGETS trj_publisher hand_pose_publisher
    RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
  )
 
+install(FILES
+   launch/trj_publisher.launch
+   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch
+ )
+
 ## Mark cpp header files for installation
 # install(DIRECTORY include/${PROJECT_NAME}/
 #   DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
